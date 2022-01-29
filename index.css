@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display';
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }    
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }    
+}
+
+.flex-container {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background-color: white;
+    width: 350px;
+    min-width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 2px 20px 20px 2px hsl(225, 100%, 80%);
+    padding-bottom: 10px;
+}
+
+#hero-image {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: hsl(223, 47%, 23%);
+}
+
+.description {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.subscription-box {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    border-radius: 10px;
+}
+
+.subscription-item {
+    padding: 8px;
+    flex-grow: 1;
+}
+
+.plan-details {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.plan-detail-item {
+    text-align: start;
+}
+
+.item1 {
+    font-weight: bold;
+    color: hsl(223, 47%, 23%);
+}
+
+.item2 {
+    color: hsl(224, 23%, 55%);
+}
+
+.change-plan {
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    text-decoration-color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+
+.change-plan:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 60%);
+}
+
+.proceed {
+    width: 80%;
+    margin: 0 auto;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 2px 20px 20px 2px hsl(245, 75%, 80%);
+}
+
+.proceed:hover {
+    background-color: hsl(245, 75%, 60%);
+}
+
+.cancel {
+    margin: 0 auto;
+    width: 80%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
